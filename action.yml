@@ -1,6 +1,10 @@
 name: 'MS Teams Notifier Pro'
 description: 'Send richly formatted message cards to Microsoft Teams via webhook'
 author: 'chanhha91'
+branding:
+  icon: 'bell'
+  color: 'red'
+
 inputs:
   webhook_url:
     required: true

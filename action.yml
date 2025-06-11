@@ -1,0 +1,39 @@
+name: 'MS Teams Notifier Pro'
+description: 'Send richly formatted message cards to Microsoft Teams via webhook'
+author: 'chanhha91'
+inputs:
+  webhook_url:
+    required: true
+    description: 'Microsoft Teams Incoming Webhook URL'
+
+  title:
+    required: false
+    default: 'GitHub Notification'
+    description: 'Card title'
+
+  summary:
+    required: false
+    default: 'New GitHub Event'
+    description: 'Short summary displayed in Teams activity feed'
+
+  theme_color:
+    required: false
+    default: '0076D7'
+    description: 'Hex color code for card accent (e.g., 00FF00 for green)'
+
+  text:
+    required: false
+    default: 'Triggered by a GitHub event'
+    description: 'Main message text, supports Markdown'
+
+  facts:
+    required: false
+    description: 'JSON array of key-value pairs for message details'
+
+  actions:
+    required: false
+    description: 'JSON array of button actions (name and url)'
+
+runs:
+  using: 'node20'
+  main: 'src/index.js'

@@ -1,0 +1,13 @@
+{
+  "name": "ms-teams-notifier-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to send rich message card notifications to Microsoft Teams",
+  "main": "src/index.js",
+  "scripts": {},
+  "author": "Chanh Ha",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "axios": "^1.6.0"
+  }
+}
